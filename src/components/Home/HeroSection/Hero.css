@@ -1,0 +1,63 @@
+.hero-section {
+    background-color: var(--light-bg);
+    background-image: url('../uploads/imgs/others/bg-wood.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8rem 0;
+}
+
+.hero-text {
+    max-width: 50%;
+    color: var(--light-bg);
+    text-align: end;
+}
+
+.hero-text .hero-description {
+    text-align: justify;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero-text p {
+    font-size: 1.0rem;
+    
+}
+
+.hero-text .highlight {
+    color: var(--primary-color);
+}
+
+.hero-text .hero-description {
+    margin: 1rem 0 2rem;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+}
+
+
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-text {
+    max-width: 100%;
+    color: var(--light-bg);
+    text-align: end;
+}
+
+    .mascote-1{
+        display:none;
+    }
+}
+

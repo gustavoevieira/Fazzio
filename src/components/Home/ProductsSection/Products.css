@@ -1,0 +1,73 @@
+.products-section {
+    text-align: center;
+    background-image: url('../uploads/imgs/others/bg-wood.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem 0;
+    color: var(--light-bg);
+}
+
+.products-section h2 {
+    margin-bottom: 1rem;
+}
+
+a {
+text-decoration: none;
+}
+.products-section p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+
+.icon-wrapper i {
+  font-size: 2.5rem;
+  color: var(--light-bg);
+}
+
+.product-item p {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--light-bg);
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+}

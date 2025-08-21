@@ -1,0 +1,98 @@
+/* src/pages/CorteCloudPage/CorteCloudPage.css */
+
+/* Cores e Estilos da Fazzio */
+/* Geral da Página */
+.cortecloud-page {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-dark);
+    text-align: center;
+}
+
+.cortecloud-page h1,
+.cortecloud-page h2,
+.cortecloud-page h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.cortecloud-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header (se for um componente separado) */
+/* O seu Header.jsx já deve ter seu próprio CSS */
+
+/* Seção Hero */
+.cortecloud-hero {
+    background-image: url('../../../public/uploads/imgs/others/bg-wood.jpg');
+    /* Exemplo de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem 0;
+    color: #ececec;
+    text-align: center;
+}
+
+.corte-logo{
+    width: 200px;
+}
+
+.cortecloud-hero .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.cortecloud-hero h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: var(--border-color);
+}
+
+.cortecloud-hero p {
+    margin-bottom: 20px;
+}
+
+/* Cards e Botões */
+.cortecloud-page .btn.primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.cortecloud-page .btn.primary:hover {
+    background-color: #6a4732;
+}
+
+/* Seções de Cards */
+.cortecloud-section {
+    padding: 4rem 0;
+}
+
+.cortecloud-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cortecloud-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cortecloud-card h3 {
+    font-size: 1.2rem;
+}
+
+.cortecloud-card p {
+    color: var(--text-color-dark);
+}

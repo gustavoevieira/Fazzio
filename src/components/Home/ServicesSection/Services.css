@@ -1,0 +1,146 @@
+.about-services-section {
+    background-color: var(--light-bg);
+    padding: 2rem 0;
+}
+
+.section-tag {
+    text-align: center;
+}
+
+.services-main-layout {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+
+.services-image-container {
+    flex: 1;
+}
+
+.services-main-image {
+    max-width: 90%;
+    border-radius: 8px;
+    margin-bottom: -44px;
+}
+
+.services-grid-container {
+    flex: 1;
+}
+
+.services-grid-container h2 {
+    margin-bottom: 2rem;
+}
+
+/* Novo estilo do grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.0rem;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.3rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color-dark);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: var(--text-color-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+}
+
+.card-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Garante que a div ocupe todo o espaço */
+    margin-bottom: 1rem;
+}
+
+.service-icon-wrapper {
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.service-icon-wrapper i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+.service-icon-wrapper img.service-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+.btn-details {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.btn-details:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+/* Ajustes no Card para acomodar o botão */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color-dark);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: var(--text-color-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+}
+
+
+
+/* Estilo do link que envolve o ícone e o título */
+.service-card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    color: var(--text-color-dark);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .services-main-layout {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #107547;
+    --secondary-color: #273046;
+    --text-color-light: #f5f5f5;
+    --text-color-dark: #333;
+    --light-bg: #f8f6f2;
+    --border-color: #ddd;
+    --wood-color: #a0522d;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-dark);
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.bar {
+    padding: 2px;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    width: 100%;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #6a4732;
+}
+
+.btn-main:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.section-tag {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* SEÇÕES */
+section {
+    padding: 4rem 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .hero-section {
+        background-image: none;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: 2;
+    }
+
+    .about-text {
+        order: 1;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        /* Ajuste a altura */
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .btn{
+        font-size: 10px;
+    }
+
+    .nav-list li {
+        margin: 0.5rem 0;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        flex-direction: column;
+    }
+
+    .about-services-section,
+    .workflow-section,
+    .testimonials-section {
+        padding: 2rem 0;
+    }
+
+    .workflow-grid {
+        flex-direction: column;
+    }
+
+    .workflow-grid::before {
+        content: none;
+    }
+}
+
+
+/* Botão estilo madeira */
+.btn-wood {
+    background: linear-gradient(135deg, #8b5a2b, #a0522d);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.3s;
+}
+
+.btn-wood:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #a0522d, #8b5a2b);
+}
+
+.card-wood {
+    background: url('public/uploads/imgs/others/wood-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-wood h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.card-wood:hover {
+    transform: scale(1.03);
+}

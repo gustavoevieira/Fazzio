@@ -1,0 +1,89 @@
+.problue-hero {
+    background-image: url('../../../public/uploads/imgs/others/bg-wood.jpg'); /* Exemplo de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem 0;
+    color: #ececec;
+}
+
+.problue-hero h1 {
+    font-size: 2.5rem;
+}
+
+.problue-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.problue-text {
+    flex: 1;
+}
+.problue-text p{
+    margin-bottom: 20px;
+}
+
+.problue-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Seção de Benefícios */
+.benefits-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.benefit-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit-item .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.benefit-item i {
+    font-size: 2.5rem;
+    color: #444;
+}
+
+.benefit-item:hover .icon-wrapper {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.benefit-item:hover i {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .problue-image img {
+    max-width: 200px;
+    height: auto;
+}
+}

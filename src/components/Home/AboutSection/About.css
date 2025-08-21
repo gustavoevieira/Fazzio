@@ -1,0 +1,43 @@
+.about-section {
+    background-color: var(--light-bg);
+
+}
+
+.about-us {
+    display: flex;
+    gap: 2rem;
+}
+
+.about-image img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+    width: 400px;
+}
+
+.section-tag {
+    font-size: 30px;
+    text-align: end;
+    letter-spacing: -1px;
+}
+
+.about-text-2 {
+    margin-top: -30px;
+    text-align: justify;
+}
+
+.about-text-1 {
+    text-align: justify;
+
+}
+
+@media (max-width: 768px) {
+    .about-image img {
+        display: none;
+    }
+
+}

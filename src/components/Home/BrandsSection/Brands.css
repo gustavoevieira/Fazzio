@@ -1,0 +1,41 @@
+
+.marquee-container img {
+    width: 150px;
+    margin: 0 4rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, filter 0.3s ease; 
+    filter: grayscale(100%);
+
+}
+
+.marquee-container img:hover {
+    filter: grayscale(0%); 
+    opacity: 1; 
+}
+
+.brands-section {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: var(--light-bg);
+}
+
+.brands-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,26 @@
+.top-bar {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    padding: 0.5rem 0;
+    font-size: 0.7rem;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 1.5rem;
+}
+
+.social-icons a {
+    color: var(--text-color-light);
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
