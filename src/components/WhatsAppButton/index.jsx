@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import whatsappAnimation from '/public/assets/lottie/whatsapp.json'; // O caminho para o arquivo JSON
+import whatsappAnimation from '../../assets/lottie/whatsapp.json';
 import './WhatsAppButton.css';
 
 const WhatsAppButton = () => {
