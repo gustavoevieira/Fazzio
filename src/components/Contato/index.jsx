@@ -20,7 +20,7 @@ const Contato = () => {
         setStatus('Enviando...');
 
         try {
-            await axios.post('http://localhost:3001/api/contato', formData);
+            await axios.post('/api/contato', formData);
             setStatus('Mensagem enviada com sucesso!');
             setFormData({ nome: '', email: '', mensagem: '' });
         } catch (error) {
